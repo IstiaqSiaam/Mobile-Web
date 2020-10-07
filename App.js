@@ -3,6 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from "./src/screens/HomeScreen";
 import ProfileScreen from "./src/screens/ProfileScreen";
+import FacultyListScreen from "./src/screens/FacultyListScreen";
 
 
 const stack = createStackNavigator();
@@ -13,6 +14,7 @@ function App() {
       <stack.Navigator initialRouteName = "Home">
         <stack.Screen name="Home" component={HomeScreen}/>
         <stack.Screen name="Profile" component={ProfileScreen}/>
+        <stack.Screen name="Faculty" component={FacultyListScreen}/>
       </stack.Navigator>
     </NavigationContainer>
      

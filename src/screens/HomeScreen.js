@@ -33,7 +33,7 @@ const HomeScreen = (props)=>{
              <Button
             title="List of Faculty Members"
             onPress= {function(){
-                console.log("Facultybutton");
+                props.navigation.navigate("Faculty");
             }}
             />
         </View>
