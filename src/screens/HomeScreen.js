@@ -10,7 +10,7 @@ const HomeScreen = (props)=>{
 
             <TouchableOpacity
             onPress = {function(){
-                console.log("Pressed")
+                alert("Welcome to IUT")
             }}>
             <Image
             style = {styles.imagestyle}
@@ -27,7 +27,7 @@ const HomeScreen = (props)=>{
              <Button
             title="Semester Wise Course List"
             onPress= {function(){
-                console.log("Coursebutton");
+                props.navigation.navigate("Semester");
             }}
             />
              <Button
