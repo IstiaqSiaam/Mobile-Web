@@ -1,6 +1,5 @@
 import React from 'react';
 import {Text, StyleSheet, View,Image,TouchableOpacity, Button } from 'react-native';
-import { block } from 'react-native-reanimated';
 
 
 const HomeScreen = (props)=>{
@@ -22,7 +21,7 @@ const HomeScreen = (props)=>{
             <Button
             title="View Profile"
             onPress= {function(){
-                console.log("Profilebutton");
+                props.navigation.navigate("Profile");
             }}
             />
              <Button
